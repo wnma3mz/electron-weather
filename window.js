@@ -3,8 +3,13 @@ $(() => {
   var http = require('http');
   var querystring = require('querystring');
   var fs = require('fs');
+  var path = require('path');
 
-  let rawdata = fs.readFileSync('Meizu_city.json');
+
+  let rawdata = fs.readFileSync(path.join(__dirname, './static/Meizu_city.json'));
+
+
+  // let rawdata = fs.readFileSync('./Meizu_city.json');
   let citys = JSON.parse(rawdata);
   // console.log(citys);
 

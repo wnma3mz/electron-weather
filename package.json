@@ -5,10 +5,12 @@
   "repository": "electron/simple-samples",
   "main": "app.js",
   "scripts": {
-    "start": "electron app.js"
+    "start": "electron app.js",
+    "packager": "electron-packager . weather-electron --linux --out ./outApp --overwrite --icon=./icon.ico"
   },
   "license": "ISC",
   "devDependencies": {
-    "electron": "^3.0.2"
+    "electron": "^3.0.2",
+    "electron-packager": "^13.0.1"
   }
 }
